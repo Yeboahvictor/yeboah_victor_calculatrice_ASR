@@ -32,8 +32,6 @@
             this.CalculationResultText = new System.Windows.Forms.Label();
             this.ButtomsPanel = new System.Windows.Forms.TableLayoutPanel();
             this.CEButton = new System.Windows.Forms.Button();
-            this.Reset = new System.Windows.Forms.Button();
-            this.Delete = new System.Windows.Forms.Button();
             this.Divide = new System.Windows.Forms.Button();
             this.Key7 = new System.Windows.Forms.Button();
             this.Key8 = new System.Windows.Forms.Button();
@@ -58,16 +56,18 @@
             // 
             this.UserInputText.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.UserInputText.Location = new System.Drawing.Point(27, 18);
+            this.UserInputText.Location = new System.Drawing.Point(2, 0);
+            this.UserInputText.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.UserInputText.Name = "UserInputText";
-            this.UserInputText.Size = new System.Drawing.Size(617, 20);
+            this.UserInputText.Size = new System.Drawing.Size(495, 19);
             this.UserInputText.TabIndex = 0;
             // 
             // CalculationResultText
             // 
-            this.CalculationResultText.Location = new System.Drawing.Point(35, 61);
+            this.CalculationResultText.Location = new System.Drawing.Point(-1, 22);
+            this.CalculationResultText.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.CalculationResultText.Name = "CalculationResultText";
-            this.CalculationResultText.Size = new System.Drawing.Size(744, 37);
+            this.CalculationResultText.Size = new System.Drawing.Size(472, 36);
             this.CalculationResultText.TabIndex = 1;
             this.CalculationResultText.Text = "Saisir une equation";
             // 
@@ -81,8 +81,6 @@
             this.ButtomsPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.ButtomsPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.ButtomsPanel.Controls.Add(this.CEButton, 0, 0);
-            this.ButtomsPanel.Controls.Add(this.Reset, 1, 0);
-            this.ButtomsPanel.Controls.Add(this.Delete, 2, 0);
             this.ButtomsPanel.Controls.Add(this.Divide, 3, 0);
             this.ButtomsPanel.Controls.Add(this.Key7, 0, 1);
             this.ButtomsPanel.Controls.Add(this.Key8, 1, 1);
@@ -100,7 +98,8 @@
             this.ButtomsPanel.Controls.Add(this.Key0, 1, 4);
             this.ButtomsPanel.Controls.Add(this.Point, 2, 4);
             this.ButtomsPanel.Controls.Add(this.Equal_sign, 3, 4);
-            this.ButtomsPanel.Location = new System.Drawing.Point(58, 102);
+            this.ButtomsPanel.Location = new System.Drawing.Point(2, 61);
+            this.ButtomsPanel.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.ButtomsPanel.Name = "ButtomsPanel";
             this.ButtomsPanel.RowCount = 5;
             this.ButtomsPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
@@ -108,49 +107,30 @@
             this.ButtomsPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.ButtomsPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.ButtomsPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.ButtomsPanel.Size = new System.Drawing.Size(384, 265);
+            this.ButtomsPanel.Size = new System.Drawing.Size(474, 283);
             this.ButtomsPanel.TabIndex = 2;
             // 
             // CEButton
             // 
+            this.CEButton.BackColor = System.Drawing.Color.Red;
             this.CEButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.CEButton.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.CEButton.Location = new System.Drawing.Point(3, 3);
+            this.CEButton.Location = new System.Drawing.Point(5, 3);
+            this.CEButton.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.CEButton.Name = "CEButton";
-            this.CEButton.Size = new System.Drawing.Size(90, 47);
+            this.CEButton.Size = new System.Drawing.Size(108, 50);
             this.CEButton.TabIndex = 0;
             this.CEButton.Text = "CE";
-            this.CEButton.UseVisualStyleBackColor = true;
+            this.CEButton.UseVisualStyleBackColor = false;
             this.CEButton.Click += new System.EventHandler(this.CEButton_Click);
-            // 
-            // Reset
-            // 
-            this.Reset.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Reset.Location = new System.Drawing.Point(99, 3);
-            this.Reset.Name = "Reset";
-            this.Reset.Size = new System.Drawing.Size(90, 47);
-            this.Reset.TabIndex = 1;
-            this.Reset.Text = "C";
-            this.Reset.UseVisualStyleBackColor = true;
-            this.Reset.Click += new System.EventHandler(this.Reset_Click);
-            // 
-            // Delete
-            // 
-            this.Delete.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Delete.Location = new System.Drawing.Point(195, 3);
-            this.Delete.Name = "Delete";
-            this.Delete.Size = new System.Drawing.Size(90, 47);
-            this.Delete.TabIndex = 2;
-            this.Delete.Text = "DEL";
-            this.Delete.UseVisualStyleBackColor = true;
-            this.Delete.Click += new System.EventHandler(this.Delete_Click);
             // 
             // Divide
             // 
             this.Divide.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Divide.Location = new System.Drawing.Point(291, 3);
+            this.Divide.Location = new System.Drawing.Point(359, 3);
+            this.Divide.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.Divide.Name = "Divide";
-            this.Divide.Size = new System.Drawing.Size(90, 47);
+            this.Divide.Size = new System.Drawing.Size(110, 50);
             this.Divide.TabIndex = 3;
             this.Divide.Text = "/";
             this.Divide.UseVisualStyleBackColor = true;
@@ -159,9 +139,10 @@
             // Key7
             // 
             this.Key7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Key7.Location = new System.Drawing.Point(3, 56);
+            this.Key7.Location = new System.Drawing.Point(5, 59);
+            this.Key7.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.Key7.Name = "Key7";
-            this.Key7.Size = new System.Drawing.Size(90, 47);
+            this.Key7.Size = new System.Drawing.Size(108, 50);
             this.Key7.TabIndex = 4;
             this.Key7.Text = "7";
             this.Key7.UseVisualStyleBackColor = true;
@@ -170,9 +151,10 @@
             // Key8
             // 
             this.Key8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Key8.Location = new System.Drawing.Point(99, 56);
+            this.Key8.Location = new System.Drawing.Point(123, 59);
+            this.Key8.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.Key8.Name = "Key8";
-            this.Key8.Size = new System.Drawing.Size(90, 47);
+            this.Key8.Size = new System.Drawing.Size(108, 50);
             this.Key8.TabIndex = 5;
             this.Key8.Text = "8";
             this.Key8.UseVisualStyleBackColor = true;
@@ -181,9 +163,10 @@
             // Key9
             // 
             this.Key9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Key9.Location = new System.Drawing.Point(195, 56);
+            this.Key9.Location = new System.Drawing.Point(241, 59);
+            this.Key9.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.Key9.Name = "Key9";
-            this.Key9.Size = new System.Drawing.Size(90, 47);
+            this.Key9.Size = new System.Drawing.Size(108, 50);
             this.Key9.TabIndex = 6;
             this.Key9.Text = "9";
             this.Key9.UseVisualStyleBackColor = true;
@@ -192,9 +175,10 @@
             // Multiply
             // 
             this.Multiply.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Multiply.Location = new System.Drawing.Point(291, 56);
+            this.Multiply.Location = new System.Drawing.Point(359, 59);
+            this.Multiply.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.Multiply.Name = "Multiply";
-            this.Multiply.Size = new System.Drawing.Size(90, 47);
+            this.Multiply.Size = new System.Drawing.Size(110, 50);
             this.Multiply.TabIndex = 7;
             this.Multiply.Text = "X";
             this.Multiply.UseVisualStyleBackColor = true;
@@ -203,9 +187,10 @@
             // Key4
             // 
             this.Key4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Key4.Location = new System.Drawing.Point(3, 109);
+            this.Key4.Location = new System.Drawing.Point(5, 115);
+            this.Key4.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.Key4.Name = "Key4";
-            this.Key4.Size = new System.Drawing.Size(90, 47);
+            this.Key4.Size = new System.Drawing.Size(108, 50);
             this.Key4.TabIndex = 8;
             this.Key4.Text = "4";
             this.Key4.UseVisualStyleBackColor = true;
@@ -214,9 +199,10 @@
             // Key5
             // 
             this.Key5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Key5.Location = new System.Drawing.Point(99, 109);
+            this.Key5.Location = new System.Drawing.Point(123, 115);
+            this.Key5.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.Key5.Name = "Key5";
-            this.Key5.Size = new System.Drawing.Size(90, 47);
+            this.Key5.Size = new System.Drawing.Size(108, 50);
             this.Key5.TabIndex = 9;
             this.Key5.Text = "5";
             this.Key5.UseVisualStyleBackColor = true;
@@ -225,9 +211,10 @@
             // Key6
             // 
             this.Key6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Key6.Location = new System.Drawing.Point(195, 109);
+            this.Key6.Location = new System.Drawing.Point(241, 115);
+            this.Key6.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.Key6.Name = "Key6";
-            this.Key6.Size = new System.Drawing.Size(90, 47);
+            this.Key6.Size = new System.Drawing.Size(108, 50);
             this.Key6.TabIndex = 10;
             this.Key6.Text = "6";
             this.Key6.UseVisualStyleBackColor = true;
@@ -236,9 +223,10 @@
             // Subtract
             // 
             this.Subtract.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Subtract.Location = new System.Drawing.Point(291, 109);
+            this.Subtract.Location = new System.Drawing.Point(359, 115);
+            this.Subtract.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.Subtract.Name = "Subtract";
-            this.Subtract.Size = new System.Drawing.Size(90, 47);
+            this.Subtract.Size = new System.Drawing.Size(110, 50);
             this.Subtract.TabIndex = 11;
             this.Subtract.Text = "-";
             this.Subtract.UseVisualStyleBackColor = true;
@@ -247,9 +235,10 @@
             // Key1
             // 
             this.Key1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Key1.Location = new System.Drawing.Point(3, 162);
+            this.Key1.Location = new System.Drawing.Point(5, 171);
+            this.Key1.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.Key1.Name = "Key1";
-            this.Key1.Size = new System.Drawing.Size(90, 47);
+            this.Key1.Size = new System.Drawing.Size(108, 50);
             this.Key1.TabIndex = 12;
             this.Key1.Text = "1";
             this.Key1.UseVisualStyleBackColor = true;
@@ -258,9 +247,10 @@
             // Key2
             // 
             this.Key2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Key2.Location = new System.Drawing.Point(99, 162);
+            this.Key2.Location = new System.Drawing.Point(123, 171);
+            this.Key2.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.Key2.Name = "Key2";
-            this.Key2.Size = new System.Drawing.Size(90, 47);
+            this.Key2.Size = new System.Drawing.Size(108, 50);
             this.Key2.TabIndex = 13;
             this.Key2.Text = "2";
             this.Key2.UseVisualStyleBackColor = true;
@@ -269,9 +259,10 @@
             // Key3
             // 
             this.Key3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Key3.Location = new System.Drawing.Point(195, 162);
+            this.Key3.Location = new System.Drawing.Point(241, 171);
+            this.Key3.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.Key3.Name = "Key3";
-            this.Key3.Size = new System.Drawing.Size(90, 47);
+            this.Key3.Size = new System.Drawing.Size(108, 50);
             this.Key3.TabIndex = 14;
             this.Key3.Text = "3";
             this.Key3.UseVisualStyleBackColor = true;
@@ -280,9 +271,10 @@
             // Add
             // 
             this.Add.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Add.Location = new System.Drawing.Point(291, 162);
+            this.Add.Location = new System.Drawing.Point(359, 171);
+            this.Add.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.Add.Name = "Add";
-            this.Add.Size = new System.Drawing.Size(90, 47);
+            this.Add.Size = new System.Drawing.Size(110, 50);
             this.Add.TabIndex = 15;
             this.Add.Text = "+";
             this.Add.UseVisualStyleBackColor = true;
@@ -291,9 +283,10 @@
             // Plus_minus
             // 
             this.Plus_minus.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Plus_minus.Location = new System.Drawing.Point(3, 215);
+            this.Plus_minus.Location = new System.Drawing.Point(5, 227);
+            this.Plus_minus.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.Plus_minus.Name = "Plus_minus";
-            this.Plus_minus.Size = new System.Drawing.Size(90, 47);
+            this.Plus_minus.Size = new System.Drawing.Size(108, 53);
             this.Plus_minus.TabIndex = 16;
             this.Plus_minus.Text = "+/-";
             this.Plus_minus.UseVisualStyleBackColor = true;
@@ -301,9 +294,10 @@
             // Key0
             // 
             this.Key0.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Key0.Location = new System.Drawing.Point(99, 215);
+            this.Key0.Location = new System.Drawing.Point(123, 227);
+            this.Key0.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.Key0.Name = "Key0";
-            this.Key0.Size = new System.Drawing.Size(90, 47);
+            this.Key0.Size = new System.Drawing.Size(108, 53);
             this.Key0.TabIndex = 17;
             this.Key0.Text = "0";
             this.Key0.UseVisualStyleBackColor = true;
@@ -312,9 +306,10 @@
             // Point
             // 
             this.Point.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Point.Location = new System.Drawing.Point(195, 215);
+            this.Point.Location = new System.Drawing.Point(241, 227);
+            this.Point.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.Point.Name = "Point";
-            this.Point.Size = new System.Drawing.Size(90, 47);
+            this.Point.Size = new System.Drawing.Size(108, 53);
             this.Point.TabIndex = 18;
             this.Point.Text = ".";
             this.Point.UseVisualStyleBackColor = true;
@@ -323,9 +318,10 @@
             // Equal_sign
             // 
             this.Equal_sign.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Equal_sign.Location = new System.Drawing.Point(291, 215);
+            this.Equal_sign.Location = new System.Drawing.Point(359, 227);
+            this.Equal_sign.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.Equal_sign.Name = "Equal_sign";
-            this.Equal_sign.Size = new System.Drawing.Size(90, 47);
+            this.Equal_sign.Size = new System.Drawing.Size(110, 53);
             this.Equal_sign.TabIndex = 19;
             this.Equal_sign.Text = "=";
             this.Equal_sign.UseVisualStyleBackColor = true;
@@ -334,14 +330,17 @@
             // Form1
             // 
             this.AcceptButton = this.Equal_sign;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.LightSteelBlue;
             this.CancelButton = this.CEButton;
-            this.ClientSize = new System.Drawing.Size(484, 381);
+            this.ClientSize = new System.Drawing.Size(475, 339);
             this.Controls.Add(this.ButtomsPanel);
             this.Controls.Add(this.CalculationResultText);
             this.Controls.Add(this.UserInputText);
-            this.MinimumSize = new System.Drawing.Size(500, 420);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            this.MinimumSize = new System.Drawing.Size(32, 48);
             this.Name = "Form1";
             this.Text = "calculator";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -357,8 +356,6 @@
         private System.Windows.Forms.Label CalculationResultText;
         private System.Windows.Forms.TableLayoutPanel ButtomsPanel;
         private System.Windows.Forms.Button CEButton;
-        private System.Windows.Forms.Button Reset;
-        private System.Windows.Forms.Button Delete;
         private System.Windows.Forms.Button Divide;
         private System.Windows.Forms.Button Key7;
         private System.Windows.Forms.Button Key8;
